@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dons League Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="header.png" alt="The Dons League">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="hamish.html">Hamish Score: <span id="hamish-score"></span></a></li>
+            <li><a href="joe.html">Joe Score: <span id="joe-score"></span></a></li>
+            <li><a href="jamie.html">Jamie Score: <span id="jamie-score"></span></a></li>
+            <li><a href="actual.html">Actual Results</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Jamie Wimbledon Lineup:</h2>
+            <form id="lineup-form">
+                <input type="text" id="lineup-input" name="lineup-input" placeholder="Type your lineup here">
+                <button type="submit">Submit</button>
+            </form>
+            <div id="lineup-display" class="lineup-display"></div>
+            <form id="score-form">
+                <div class="score-prediction-row">
+                    <div class="score-input-group">
+                        <label for="wimbledon-score">Wimbledon</label>
+                        <input type="number" id="wimbledon-score" name="wimbledon-score" placeholder="0" min="0">
+                    </div>
+                    <div class="score-input-group">
+                        <label for="opponent-score">Opponent</label>
+                        <input type="number" id="opponent-score" name="opponent-score" placeholder="0" min="0">
+                    </div>
+                </div>
+                <div class="score-prediction-row">
+                    <div class="score-input-group">
+                        <label for="home-score-1">Home 1</label>
+                        <input type="number" id="home-score-1" name="home-score-1" placeholder="0" min="0">
+                    </div>
+                    <div class="score-input-group">
+                        <label for="away-score-1">Away 1</label>
+                        <input type="number" id="away-score-1" name="away-score-1" placeholder="0" min="0">
+                    </div>
+                </div>
+                <div class="score-prediction-row">
+                    <div class="score-input-group">
+                        <label for="home-score-2">Home 2</label>
+                        <input type="number" id="home-score-2" name="home-score-2" placeholder="0" min="0">
+                    </div>
+                    <div class="score-input-group">
+                        <label for="away-score-2">Away 2</label>
+                        <input type="number" id="away-score-2" name="away-score-2" placeholder="0" min="0">
+                    </div>
+                </div>
+                <div class="score-prediction-row">
+                    <div class="score-input-group">
+                        <label for="home-score-3">Home 3</label>
+                        <input type="number" id="home-score-3" name="home-score-3" placeholder="0" min="0">
+                    </div>
+                    <div class="score-input-group">
+                        <label for="away-score-3">Away 3</label>
+                        <input type="number" id="away-score-3" name="away-score-3" placeholder="0" min="0">
+                    </div>
+                </div>
+                <div class="score-prediction-row">
+                    <div class="score-input-group">
+                        <label for="home-score-4">Home 4</label>
+                        <input type="number" id="home-score-4" name="home-score-4" placeholder="0" min="0">
+                    </div>
+                    <div class="score-input-group">
+                        <label for="away-score-4">Away 4</label>
+                        <input type="number" id="away-score-4" name="away-score-4" placeholder="0" min="0">
+                    </div>
+                </div>
+                <button type="submit">Submit Score</button>
+                <div id="score-display" class="score-display"></div>
+            </form>
+            <button type="button" id="calculate-score-button">Calculate Score</button>
+            <button type="button" id="add-points-button" style="display:none; margin-top:0.75rem;">Add Points</button>
+            <div id="calculate-result-display" class="score-display"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Wesbite by Hamish Parry</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
