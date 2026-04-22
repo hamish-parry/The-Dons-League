@@ -313,7 +313,7 @@ async function init() {
     updateNavScores();
     updateLineupDisplay();
     updateScoreDisplay();
-    setupForms();
 }
 
+setupForms();
 init();
